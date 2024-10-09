@@ -16,7 +16,11 @@ Note:
 If you are using a reserved keyword as a table name or something you may get an error, so just enclosed with double quotes.
 
   "final" AS (
+  
     SELECT
+    
       vw.*,
+      
       TRIM(gc.first_name||' '||gc.last_name) AS "influencer_name"
+      
     FROM "vw" AS vw
