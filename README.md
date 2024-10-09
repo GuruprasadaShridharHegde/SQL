@@ -10,3 +10,13 @@
 7. Use EXISTS () instead of COUNT() to discover whether the table has a specific record.
 8. Use varchar / nvarchar instead of char because char takes extra spaces.
 9. Use LIMIT to preview query results.
+
+Note:
+1. https://github.com/apache/superset/issues/6998
+If you are using a reserved keyword as a table name or something you may get an error, so just enclosed with double quotes.
+
+  "final" AS (
+    SELECT
+      vw.*,
+      TRIM(gc.first_name||' '||gc.last_name) AS "influencer_name"
+    FROM "vw" AS vw
