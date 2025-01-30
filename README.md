@@ -1,4 +1,41 @@
 # SQL
+
+# SQL Interview Preparation Guide
+
+## General Questions
+Expect questions to assess your background and experience with SQL, such as:
+- How much experience do you have with SQL?
+- Which SQL flavors have you worked with? (e.g., MySQL, PostgreSQL, SQL Server, Oracle, etc.)
+- How would you rate your SQL proficiency (beginner, intermediate, advanced)?
+
+## Technical Questions
+These questions evaluate your understanding of SQL concepts and fundamentals:
+
+### 1. What is SQL?
+SQL (Structured Query Language) is used for managing and manipulating relational databases.
+
+### 2. Applications of SQL
+SQL is used for data retrieval, insertion, updating, deletion, and database management.
+
+### 3. SQL Statements
+SQL statements are commands used to interact with databases, including querying, modifying, and defining data structures.
+
+### 4. Types of SQL Commands
+SQL commands are categorized into:
+- **DDL (Data Definition Language)**: `CREATE`, `ALTER`, `DROP` (for defining database structures)
+- **DML (Data Manipulation Language)**: `INSERT`, `UPDATE`, `DELETE` (for modifying data)
+- **DQL (Data Query Language)**: `SELECT` (for retrieving data)
+- **DCL (Data Control Language)**: `GRANT`, `REVOKE` (for managing user permissions)
+- **TCL (Transaction Control Language)**: `COMMIT`, `ROLLBACK`, `SAVEPOINT` (for handling transactions)
+
+### 5. Types of SQL Queries
+- **Single-row queries** (returning one row)
+- **Multi-row queries** (returning multiple rows)
+- **Aggregate queries** (`SUM`, `COUNT`, `AVG`, etc.)
+- **Subqueries** (nested queries)
+- **Joins** (`INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN` for combining data from multiple tables)
+
+
 ## Query Optimization tips
 
 1. Use Indexes for search or create index for commonly used column in WHERE conditions,
@@ -25,23 +62,3 @@ If you are using a reserved keyword as a table name or something you may get an 
       TRIM(gc.first_name||' '||gc.last_name) AS "influencer_name"
       
     FROM "vw" AS vw
-
-1. General Questions
-These questions help interviewers understand your background and experience with SQL. They may ask:
-
-How much experience do you have with SQL?
-Which SQL flavors have you worked with? (e.g., MySQL, PostgreSQL, SQL Server, Oracle, etc.)
-How would you rate your SQL proficiency (beginner, intermediate, advanced)?
-2. Technical Questions
-These questions assess your understanding of SQL concepts and fundamentals:
-
-What is SQL? (Structured Query Language for managing databases)
-What are the main applications of SQL? (Data retrieval, manipulation, and management)
-What are SQL statements? (Commands used to interact with databases)
-What are the types of SQL commands?
-DDL (Data Definition Language) – CREATE, ALTER, DROP (used to define database structures)
-DML (Data Manipulation Language) – INSERT, UPDATE, DELETE (modifies data)
-DQL (Data Query Language) – SELECT (retrieves data)
-DCL (Data Control Language) – GRANT, REVOKE (manages user permissions)
-TCL (Transaction Control Language) – COMMIT, ROLLBACK, SAVEPOINT (manages transactions)
-What are the different types of SQL queries? (Single-row, multi-row, aggregate, subqueries, joins, etc.)
