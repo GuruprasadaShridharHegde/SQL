@@ -35,6 +35,35 @@ SQL commands are categorized into:
 - **Subqueries** (nested queries)
 - **Joins** (`INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN` for combining data from multiple tables)
 
+## Intermediate Level SQL Topics
+
+### 1. Functions in SQL
+SQL functions can be categorized as:
+- **Aggregate Functions**: Perform calculations on multiple rows, returning a single value (e.g., `SUM`, `COUNT`, `AVG`, `MIN`, `MAX`).
+- **Scalar Functions**: Operate on individual values and return a single value per row (e.g., `LENGTH`, `UCASE`, `NOW`).
+- **Built-in Functions**: Predefined functions provided by SQL databases for common operations.
+- **User-defined Functions (UDFs)**: Custom functions created by users to perform specific operations.
+
+### 2. Advanced SQL Commands
+These include:
+- **Joins**: Combining data from multiple tables (`INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN`).
+- **Primary and Foreign Keys**: Enforcing referential integrity in relational databases.
+- **Indexes**: Improving query performance by optimizing data retrieval.
+- **SQL Relationships**: Understanding `one-to-one`, `one-to-many`, and `many-to-many` relationships between tables.
+
+### 3. Database Design
+Key concepts in designing an efficient database:
+- **Normalization**: Organizing data to reduce redundancy and improve integrity (1NF, 2NF, 3NF, BCNF, etc.).
+- **Denormalization**: Optimizing database performance by reducing joins and increasing redundancy.
+- **DELETE vs TRUNCATE vs DROP**: Understanding when to use each for removing data or tables:
+  - `DELETE`: Removes specific rows with a `WHERE` clause and can be rolled back.
+  - `TRUNCATE`: Removes all rows from a table quickly but cannot be rolled back.
+  - `DROP`: Deletes the entire table structure permanently.
+
+### 4. Advanced Queries
+- **Subqueries**: Queries within queries; can be nested or correlated.
+- **Finding nth Highest Value**: Techniques like `LIMIT`, `OFFSET`, `DENSE_RANK()`, and `ROW_NUMBER()` to retrieve ranked values from a dataset.
+
 
 ## Query Optimization tips
 
