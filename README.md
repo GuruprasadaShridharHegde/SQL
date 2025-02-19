@@ -80,6 +80,7 @@ SQL constraints are used to specify rules for the data in a table. Constraints a
 - DEFAULT - Sets a default value for a column if no value is specified
 - CREATE INDEX - Used to create and retrieve data from the database very quickly
 
+
 CREATE TABLE employees (
 
     emp_id INT PRIMARY KEY,             -- Ensures unique and non-null values
