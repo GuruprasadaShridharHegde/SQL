@@ -80,16 +80,15 @@ SQL constraints are used to specify rules for the data in a table. Constraints a
 - DEFAULT - Sets a default value for a column if no value is specified
 - CREATE INDEX - Used to create and retrieve data from the database very quickly
 
-Example: 
-- CREATE TABLE employees (
--    emp_id INT PRIMARY KEY,             -- Ensures unique and non-null values
--    name VARCHAR(100) NOT NULL,          -- Ensures the name column cannot have NULL values
--    email VARCHAR(255) UNIQUE,           -- Ensures email values are unique
--    age INT CHECK (age >= 18),           -- Ensures age is at least 18
--    department VARCHAR(50) DEFAULT 'IT', -- Sets 'IT' as the default value if not provided
--    manager_id INT,  
--    FOREIGN KEY (manager_id) REFERENCES employees(emp_id)  -- Ensures valid references to emp_id
-- );
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,             -- Ensures unique and non-null values
+    name VARCHAR(100) NOT NULL,          -- Ensures the name column cannot have NULL values
+    email VARCHAR(255) UNIQUE,           -- Ensures email values are unique
+    age INT CHECK (age >= 18),           -- Ensures age is at least 18
+    department VARCHAR(50) DEFAULT 'IT', -- Sets 'IT' as the default value if not provided
+    manager_id INT,  
+    FOREIGN KEY (manager_id) REFERENCES employees(emp_id)  -- Ensures valid references to emp_id
+);
 
 
 ## Query Optimization tips
