@@ -65,6 +65,33 @@ Key concepts in designing an efficient database:
 - **Finding nth Highest Value**: Techniques like `LIMIT`, `OFFSET`, `DENSE_RANK()`, and `ROW_NUMBER()` to retrieve ranked values from a dataset.
 
 
+### SQL Constraints:
+
+SQL constraints are used to specify rules for the data in a table. Constraints are used to limit the type of data that can go into a table. This ensures the accuracy and reliability of the data in the table.
+
+
+- The following constraints are commonly used in SQL:
+
+- NOT NULL - Ensures that a column cannot have a NULL value
+- UNIQUE - Ensures that all values in a column are different
+- PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+- FOREIGN KEY - Prevents actions that would destroy links between tables
+- CHECK - Ensures that the values in a column satisfies a specific condition
+- DEFAULT - Sets a default value for a column if no value is specified
+- CREATE INDEX - Used to create and retrieve data from the database very quickly
+
+Example: 
+- CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,             -- Ensures unique and non-null values
+    name VARCHAR(100) NOT NULL,          -- Ensures the name column cannot have NULL values
+    email VARCHAR(255) UNIQUE,           -- Ensures email values are unique
+    age INT CHECK (age >= 18),           -- Ensures age is at least 18
+    department VARCHAR(50) DEFAULT 'IT', -- Sets 'IT' as the default value if not provided
+    manager_id INT,  
+    FOREIGN KEY (manager_id) REFERENCES employees(emp_id)  -- Ensures valid references to emp_id
+);
+
+
 ## Query Optimization tips
 
 1. Use Indexes for search or create index for commonly used column in WHERE conditions,
